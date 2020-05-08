@@ -23,7 +23,7 @@ namespace CreateRating.Function
             [HttpTrigger(AuthorizationLevel.Anonymous, "get", "post", Route = null)] HttpRequest req,
             ILogger log)
         {
-            log.LogInformation("Creating Rating...");
+            log.LogInformation("Create and store a new Rating record in Azure Cosmos DB...");
 
             string userId = ""; //req.Query["userId"];
             string productId = "";
