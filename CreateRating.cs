@@ -23,7 +23,7 @@ namespace CreateRating.Function
             [HttpTrigger(AuthorizationLevel.Anonymous, "get", "post", Route = null)] HttpRequest req,
             ILogger log)
         {
-            log.LogInformation("C# HTTP trigger function processed a request.");
+            log.LogInformation("Create Request...");
 
             string userId = ""; //req.Query["userId"];
             string productId = "";
