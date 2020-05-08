@@ -19,6 +19,9 @@ jobs:
   build-and-deploy:
     runs-on: windows-latest
     steps:
+    - name: Debug Action
+      uses: hmarr/debug-action@v1.0.0
+      
     - name: 'Checkout GitHub Action'
       uses: actions/checkout@master
 
